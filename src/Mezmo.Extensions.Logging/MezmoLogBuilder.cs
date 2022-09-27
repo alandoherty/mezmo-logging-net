@@ -1,12 +1,10 @@
-namespace Mezmo.Logging.Microsoft
+namespace Mezmo.Extensions.Logging
 {
     /// <summary>
     /// Implements a 
     /// </summary>
     public sealed class MezmoLogBuilder
     {
-        private readonly List<string> _tags = new List<string>();
-        
         /// <summary>
         /// The API key.
         /// </summary>

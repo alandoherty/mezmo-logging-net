@@ -1,7 +1,8 @@
+using Mezmo.Logging;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
 
-namespace Mezmo.Logging.Microsoft
+namespace Mezmo.Extensions.Logging
 {
     /// <summary>
     /// The Mezmo log provider.

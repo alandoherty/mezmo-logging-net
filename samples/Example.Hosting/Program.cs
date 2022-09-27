@@ -1,5 +1,5 @@
 ﻿using Example.Hosting.Configuration;
-using Mezmo.Logging.Microsoft;
+using Mezmo.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;

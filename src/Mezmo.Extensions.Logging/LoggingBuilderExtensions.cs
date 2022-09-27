@@ -1,7 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace Mezmo.Logging.Microsoft
+namespace Mezmo.Extensions.Logging
 {
     /// <summary>
     /// Provides extension methods for <see cref="IServiceCollection"/>

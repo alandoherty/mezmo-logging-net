@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mezmo.Logging", "src\Mezmo.Logging\Mezmo.Logging.csproj", "{C904DE8D-74F2-41FF-813A-CDD05F100E56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mezmo.Logging.Microsoft", "src\Mezmo.Logging.Microsoft\Mezmo.Logging.Microsoft.csproj", "{FB2798AE-6826-4D51-A331-FB0EFC813C1D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mezmo.Extensions.Logging", "src\Mezmo.Extensions.Logging\Mezmo.Extensions.Logging.csproj", "{FB2798AE-6826-4D51-A331-FB0EFC813C1D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{007D772D-8462-444C-9EA1-29FDED951B03}"
 EndProject

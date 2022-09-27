@@ -8,23 +8,27 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Authors>Alan Doherty</Authors>
     </PropertyGroup>
-    
+
     <PropertyGroup Condition="'$(Configuration)'=='Release'">
-      <DocumentationFile>bin\Release\Mezmo.Logging.xml</DocumentationFile>
+      <DocumentationFile>bin\Release\Mezmo.Extensions.Logging.xml</DocumentationFile>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)'=='Debug'">
-      <DocumentationFile>bin\Debug\Mezmo.Logging.xml</DocumentationFile>
+      <DocumentationFile>bin\Debug\Mezmo.Extensions.Logging.xml</DocumentationFile>
     </PropertyGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="..\Mezmo.Logging\Mezmo.Logging.csproj" />
+    </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="GitInfo" Version="2.2.0">
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
-      <PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.2" />
     </ItemGroup>
-
+    
     <Target Name="SetNuspecProperties" BeforeTargets="GenerateNuspec" DependsOnTargets="GitVersion">
       <PropertyGroup>
         <Version Condition="$(GitBranch) == 'master'">$(GitBaseTag)</Version>

@@ -1,7 +1,8 @@
 using System.Text.Json;
+using Mezmo.Logging;
 using Microsoft.Extensions.Logging;
 
-namespace Mezmo.Logging.Microsoft
+namespace Mezmo.Extensions.Logging
 {
     /// <summary>
     /// Implements an <see cref="ILogger{TCategoryName}"/> for Mezmo.

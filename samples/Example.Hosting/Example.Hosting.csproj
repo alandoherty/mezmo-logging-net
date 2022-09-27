@@ -12,7 +12,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\Mezmo.Logging.Microsoft\Mezmo.Logging.Microsoft.csproj" />
+      <ProjectReference Include="..\..\src\Mezmo.Extensions.Logging\Mezmo.Extensions.Logging.csproj" />
     </ItemGroup>
 
 </Project>
