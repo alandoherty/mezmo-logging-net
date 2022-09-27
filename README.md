@@ -1,15 +1,11 @@
-<div align="center">
-
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/alandoherty/mezmologging-net/master/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/alandoherty/mezmologging-net.svg?style=flat-square)](https://github.com/alandoherty/mezmologging-net/issues)
-[![GitHub stars](https://img.shields.io/github/stars/alandoherty/mezmologging-net.svg?style=flat-square)](https://github.com/alandoherty/mezmologging-net/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/alandoherty/mezmologging-net.svg?style=flat-square)](https://github.com/alandoherty/mezmologging-net/network)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/alandoherty/mezmo-logging-net/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/alandoherty/mezmo-logging-net.svg?style=flat-square)](https://github.com/alandoherty/mezmo-logging-net/issues)
+[![GitHub stars](https://img.shields.io/github/stars/alandoherty/mezmo-logging-net.svg?style=flat-square)](https://github.com/alandoherty/mezmo-logging-net/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/alandoherty/mezmo-logging-net.svg?style=flat-square)](https://github.com/alandoherty/mezmo-logging-net/network)
 [![NuGet 1](https://img.shields.io/nuget/dt/Mezmo.Logging.svg?style=flat-square)](https://www.nuget.org/packages/Mezmo.Logging/)
 [![NuGet 2](https://img.shields.io/nuget/dt/Mezmo.Extensions.Logging.svg?style=flat-square)](https://www.nuget.org/packages/Mezmo.Extensions.Logging/)
 
-</div>
-
-# mezmologging
+# mezmo-logging
 
 A library for ingesting logs into Mezmo (formerly LogDNA) on .NET 6.0 and greater. The library provides high performance logging, and focuses on reducing overheads such as allocations.
 
