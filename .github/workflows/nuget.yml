@@ -22,10 +22,10 @@ jobs:
     - name: Build
       run: dotnet build --no-restore -c Release
     - name: Mezmo.Logging NuGet
-      run: dotnet nuget push src/Mezmo.Logging/bin/Release/*.nupkg --api-key $NUGET_API_KEY --source https://api.nuget.org/v3/index.json
+      run: dotnet nuget push src/Mezmo.Logging/bin/Release/*.nupkg --api-key $NUGET_API_KEY --source https://api.nuget.org/v3/index.json --skip-duplicate
       env:
         NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
     - name: Mezmo.Extensions.Logging NuGet
-      run: dotnet nuget push src/Mezmo.Extensions.Logging/bin/Release/*.nupkg --api-key $NUGET_API_KEY --source https://api.nuget.org/v3/index.json
+      run: dotnet nuget push src/Mezmo.Extensions.Logging/bin/Release/*.nupkg --api-key $NUGET_API_KEY --source https://api.nuget.org/v3/index.json --skip-duplicate
       env:
         NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
