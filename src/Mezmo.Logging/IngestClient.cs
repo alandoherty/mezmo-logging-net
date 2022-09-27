@@ -48,6 +48,9 @@ namespace Mezmo.Logging
         public TimeSpan SendInterval { get; set; } = TimeSpan.FromMilliseconds(DefaultSendIntervalInMs);
 
         /// <inheritdoc/>
+        public int SendBufferCapacity { get; set; } = 4096;
+
+        /// <inheritdoc/>
         public string ApiKey { get; }
 
         /// <inheritdoc/>
@@ -59,6 +62,11 @@ namespace Mezmo.Logging
             if (_disposed > 0) throw new ObjectDisposedException("The ingest client has been disposed");
 
             _pendingLines.Enqueue(line);
+            
+            // If we exceed capacity remove the oldest log line
+            if (_pendingLines.Count > SendBufferCapacity) {
+                _pendingLines.TryDequeue(out _);
+            }
         }
 
         /// <inheritdoc/>
@@ -68,6 +76,11 @@ namespace Mezmo.Logging
 
             foreach (var line in _pendingLines) {
                 _pendingLines.Enqueue(line);
+                
+                // If we exceed capacity remove the oldest log line
+                if (_pendingLines.Count > SendBufferCapacity) {
+                    _pendingLines.TryDequeue(out _);
+                }
             }
         }
 

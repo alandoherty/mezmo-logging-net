@@ -31,6 +31,16 @@ namespace Mezmo.Extensions.Logging
         public IEnumerable<string> Tags { get; set; } = Enumerable.Empty<string>();
 
         /// <summary>
+        /// The send interval for log batches, optional and sane default is used.
+        /// </summary>
+        public TimeSpan? SendInterval { get; set; }
+
+        /// <summary>
+        /// The maximum number of lines to buffer before dropping log data.
+        /// </summary>
+        public int? SendBufferCapacity { get; set; }
+
+        /// <summary>
         /// Build the <see cref="MezmoLogProvider"/>
         /// </summary>
         /// <returns>The provider.</returns>
@@ -40,7 +50,7 @@ namespace Mezmo.Extensions.Logging
                 throw new InvalidOperationException("The builder must be configured with an API key");
             }
 
-            return new MezmoLogProvider(ApiKey, Uri, ClientFactory, AppName, Tags);
+            return new MezmoLogProvider(ApiKey, Uri, ClientFactory, AppName, Tags, SendInterval, SendBufferCapacity);
         }
     }
 }

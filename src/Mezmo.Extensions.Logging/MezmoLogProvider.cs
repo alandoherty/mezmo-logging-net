@@ -38,11 +38,15 @@ namespace Mezmo.Extensions.Logging
             return new MezmoLogger(this);
         }
 
-        internal MezmoLogProvider(string apiKey, Uri? uri, IHttpClientFactory? clientFactory, string? appName, IEnumerable<string> tags)
+        internal MezmoLogProvider(string apiKey, Uri? uri, IHttpClientFactory? clientFactory, string? appName, IEnumerable<string> tags,
+            TimeSpan? sendInterval, 
+            int? sendBufferCapacity)
         {
             _appName = appName;
             _client = new IngestClient(apiKey, uri, clientFactory);
             _client.Tags = tags;
+            if (sendInterval != null) _client.SendInterval = sendInterval.Value;
+            if (sendBufferCapacity != null) _client.SendBufferCapacity = sendBufferCapacity.Value;
         }
     }
 }
