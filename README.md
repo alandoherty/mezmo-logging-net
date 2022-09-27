@@ -54,7 +54,7 @@ You can configure the example with a `Settings.json` file, or by using the follo
 
 The library supports recording metadata for the `Microsoft.Extensions.Logging` based logger. This is done using the scope system, see the `Example.Hosting` project for a hands on example. The scope state data will be serialized using `System.Text.Json.JsonSerializer`, you can pass a `string` directly to `ILogger.BeginScope` if you want to fully control the metadata formatting sent to Mezmo.
 
-```
+```csharp
 class MyData {
     public string IpAddress { get; set; }
     public string UserAgent { get; set; }
