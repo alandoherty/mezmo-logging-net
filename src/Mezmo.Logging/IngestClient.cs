@@ -31,10 +31,6 @@ namespace Mezmo.Logging
         private ConcurrentQueue<LogLine> _pendingLines = new ConcurrentQueue<LogLine>();
         private Task _loopTask;
 
-        private object _flushObj = new();
-        private TaskCompletionSource? _flushRequest = new TaskCompletionSource();
-        private TaskCompletionSource? _flushCompletion = null;
-
         private string _cachedTags = "";
         private IEnumerable<string> _tags = Enumerable.Empty<string>();
 
@@ -89,16 +85,6 @@ namespace Mezmo.Logging
                     }
                 }
 
-                TaskCompletionSource? completionSource = null;
-
-                lock (_flushObj) {
-                    if (_flushCompletion != null) {
-                        completionSource = _flushCompletion;
-                        _flushCompletion = null;
-                        _flushRequest = null;
-                    }
-                }
-                
                 // If we have no log lines we can skip sending anything
                 if (_pendingLines.Count == 0)
                     continue;
