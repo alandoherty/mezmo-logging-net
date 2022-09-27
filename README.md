@@ -5,7 +5,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/alandoherty/mezmologging-net.svg?style=flat-square)](https://github.com/alandoherty/mezmologging-net/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/alandoherty/mezmologging-net.svg?style=flat-square)](https://github.com/alandoherty/mezmologging-net/network)
 [![NuGet 1](https://img.shields.io/nuget/dt/Mezmo.Logging.svg?style=flat-square)](https://www.nuget.org/packages/Mezmo.Logging/)
-[![NuGet 2](https://img.shields.io/nuget/dt/Mezmo.Logging.Microsoft.svg?style=flat-square)](https://www.nuget.org/packages/Mezmo.Logging.Microsoft/)
+[![NuGet 2](https://img.shields.io/nuget/dt/Mezmo.Extensions.Logging.svg?style=flat-square)](https://www.nuget.org/packages/Mezmo.Extensions.Logging/)
 
 </div>
 
@@ -19,14 +19,14 @@ You should ensure that you call `IIngestClient.DisposeAsync` to flush any remain
 
 ## Getting Started
 
-[![NuGet Status](https://img.shields.io/nuget/v/Mezmo.Logging.Microsoft.svg?style=flat-square)](https://www.nuget.org/packages/Mezmo.Logging.Microsoft/)
+[![NuGet Status](https://img.shields.io/nuget/v/Mezmo.Extensions.Logging.svg?style=flat-square)](https://www.nuget.org/packages/Mezmo.Extensions.Logging/)
 
 You can install the package using either the CLI:
 
 ```
 dotnet add package Mezmo.Logging
 or
-dotnet add package Mezmo.Logging.Microsoft
+dotnet add package Mezmo.Extensions.Logging
 ```
 
 or from the NuGet package manager:
@@ -34,7 +34,7 @@ or from the NuGet package manager:
 ```
 Install-Package Mezmo.Logging
 or
-Install-Package Mezmo.Logging.Microsoft
+Install-Package Mezmo.Extensions.Logging
 ```
 
 ### Example
