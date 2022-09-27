@@ -17,6 +17,10 @@
       <DocumentationFile>bin\Debug\Mezmo.Extensions.Logging.xml</DocumentationFile>
     </PropertyGroup>
     
+    <PropertyGroup>
+        <GitInfoReportImportance Condition="'$(Configuration)' == 'Release'">high</GitInfoReportImportance>
+    </PropertyGroup>
+  
     <ItemGroup>
       <ProjectReference Include="..\Mezmo.Logging\Mezmo.Logging.csproj" />
     </ItemGroup>

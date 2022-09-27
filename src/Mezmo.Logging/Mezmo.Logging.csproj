@@ -16,7 +16,11 @@
     <PropertyGroup Condition="'$(Configuration)'=='Debug'">
       <DocumentationFile>bin\Debug\Mezmo.Logging.xml</DocumentationFile>
     </PropertyGroup>
-
+    
+    <PropertyGroup>
+        <GitInfoReportImportance Condition="'$(Configuration)' == 'Release'">high</GitInfoReportImportance>
+    </PropertyGroup>
+    
     <ItemGroup>
       <PackageReference Include="GitInfo" Version="2.2.0">
         <PrivateAssets>all</PrivateAssets>
