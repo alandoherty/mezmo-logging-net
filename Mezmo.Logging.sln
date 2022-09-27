@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mezmo.Logging", "src\Mezmo.Logging\Mezmo.Logging.csproj", "{C904DE8D-74F2-41FF-813A-CDD05F100E56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mezmo.Logging.Microsoft", "src\Mezmo.Logging.Microsoft\Mezmo.Logging.Microsoft.csproj", "{FB2798AE-6826-4D51-A331-FB0EFC813C1D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{007D772D-8462-444C-9EA1-29FDED951B03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example.Hosting", "samples\Example.Hosting\Example.Hosting.csproj", "{8E7A606C-3D1F-4B1A-A90E-E237225E798B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C904DE8D-74F2-41FF-813A-CDD05F100E56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C904DE8D-74F2-41FF-813A-CDD05F100E56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C904DE8D-74F2-41FF-813A-CDD05F100E56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C904DE8D-74F2-41FF-813A-CDD05F100E56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB2798AE-6826-4D51-A331-FB0EFC813C1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB2798AE-6826-4D51-A331-FB0EFC813C1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB2798AE-6826-4D51-A331-FB0EFC813C1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB2798AE-6826-4D51-A331-FB0EFC813C1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E7A606C-3D1F-4B1A-A90E-E237225E798B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E7A606C-3D1F-4B1A-A90E-E237225E798B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E7A606C-3D1F-4B1A-A90E-E237225E798B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E7A606C-3D1F-4B1A-A90E-E237225E798B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8E7A606C-3D1F-4B1A-A90E-E237225E798B} = {007D772D-8462-444C-9EA1-29FDED951B03}
+	EndGlobalSection
+EndGlobal
